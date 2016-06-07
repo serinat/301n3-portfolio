@@ -18,7 +18,7 @@ Project.prototype.toHtml = function () {
   $newProject.removeClass('template');
 
   return $newProject;
-}
+};
 
 projectData.sort(function(a,b) {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
@@ -26,8 +26,8 @@ projectData.sort(function(a,b) {
 
 projectData.forEach(function(ele) {
   projects.push(new Project(ele));
-})
+});
 
 projects.forEach(function(a){
-  $('#projects').append(a.toHtml())
+  $('#projects').append(a.toHtml());
 });
