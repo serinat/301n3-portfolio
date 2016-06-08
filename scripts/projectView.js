@@ -2,6 +2,7 @@ var projectView = {};
 
 projectView.handleMainNav = function() {
   $('.main-nav').on('click', '.tab', function(e) {
+    e.preventDefault();
     $('.tab-content').hide();
     $('#' + $(this).data('content')).fadeIn();
   });
@@ -12,3 +13,9 @@ projectView.handleMainNav = function() {
 $(document).ready(function() {
   projectView.handleMainNav();
 });
+// $('.main-nav').on('click', '.tab', function(e) {
+//   e.preventDefault();
+//   $('.tab-content').hide();
+//   var $link = $(this).data('content');
+//   $('#' + $link).fadeIn();
+// });

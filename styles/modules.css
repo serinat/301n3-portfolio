@@ -2,19 +2,19 @@
   display: none;
 }
 
-.draft {
+/*.draft {
   display: none;
-}
+}*/
 
-.byline {
+/*.byline {
   color: #777;
-}
+}*/
 
-.byline a {
+/*.byline a {
   font-weight: bold;
   text-decoration: none;
   color: inherit;
-}
+}*/
 
 .icon-menu {
   font-size: 3em;
