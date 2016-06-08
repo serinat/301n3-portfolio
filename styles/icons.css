@@ -43,6 +43,9 @@
 }
 .icon-link:before {
 	content: "\e903";
+	color: black;
+	font-size: 30px;
+	text-decoration: none;
 }
 .icon-happy:before {
 	content: "\e904";
@@ -67,4 +70,6 @@
 }
 .icon-github:before {
 	content: "\e907";
+	color: black;
+	font-size: 30px;
 }

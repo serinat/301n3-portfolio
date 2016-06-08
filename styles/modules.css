@@ -16,17 +16,10 @@
   color: inherit;
 }
 
-/*.pull-left {
-  float: left;
-}
-
-.pull-right {
-  float: right;
-}*/
-
 .icon-menu {
   font-size: 3em;
   float: right;
+  text-decoration: none;
 }
 
 .main-nav {
