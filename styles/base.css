@@ -1,5 +1,19 @@
+* {
+  background-color: #BCB88A;
+}
+
 body {
   padding: 1em;
+}
+
+h1 {
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 70px;
+  text-align: center;
+}
+
+a {
+  color: #CC9900;
 }
 
 main {

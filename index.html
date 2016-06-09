@@ -4,48 +4,64 @@
     <meta charset="UTF-8">
     <title>Portfolio of Serina Tsang</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="vendors/animate.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="vendors/normalize.css">
     <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
-    <script src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
+      <h2 class="animated bounceInRight">Welcome to my portfolio!</h2>
       <h1 class="animated fadeIn">Serina Tsang</h1>
     </header>
   <nav class="main-nav">
     <a href="" class="icon-menu"></a>
     <ul>
-      <li class="tab icon-home" data-content="home"><a href="#">HOME</a></li>
-      <li class="tab icon-happy" data-content="about"><a href="#">ABOUT ME</a></li>
-      <li class="tab icon-rocket" data-content="projects"><a href="#">GITHUB PROJECTS</a></li>
-      <li class="tab icon-address-book" data-content="contact"><a href="#">CONTACT</a></li>
+      <li class="tab" data-content="home"><a href="#" class="icon-home">HOME</a></li>
+      <li class="tab" data-content="projects"><a href="#" class="icon-rocket">GITHUB PROJECTS</a></li>
+      <li class="tab" data-content="about"><a href="#" class="icon-happy">ABOUT ME</a></li>
+      <li class="tab" data-content="contact"><a href="#" class="icon-address-book">CONTACT</a></li>
     </ul>
   </nav>
   <main>
-    <section id='projects'>
+    <section id="projects" class="tab-content">
       <project class="template"
       <header>
         <h2>Title</h2>
           published <time pubdate datetime="2000-01-01">Publish Time</time>
       </header>
-    <section class='project-body'></section>
+    <section class="project-body"></section>
       </project>
     </section>
     <section id="about" class="tab-content">
       <header>
-        <h2>Welcome to my portfolio!</h2>
-      </header>
         <h2>About Me</h2>
+      </header>
+      <section>
         <ul>
           <li>I love coding</li>
           <li>I love my family</li>
         </ul>
+      </section>
     </section>
+    <hr>
+    <section id="contact" class="tab-content">
+      <header>
+        <h2>Contact</h2>
+      </header>
+      <section>
+        <ul>
+          <li><a class="tab icon-link" href="mailto:serinat@uw.edu"></a></li>
+          <li><a class="tab icon-github" href='https://github.com/serinat'></a></li>
+        </ul>
+      </section>
   </main>
-  <script type='text/javascript' src='scripts/projects.js'></script>
-    <script type='text/javascript' src='scripts/app.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/projects.js"></script>
+  <script type="text/javascript" src="scripts/app.js"></script>
+  <script type="text/javascript" src="scripts/projectView.js"></script>
   </body>
 </html>
