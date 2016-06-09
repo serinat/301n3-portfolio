@@ -1,9 +1,9 @@
 var projectView = {};
 
 projectView.handleMainNav = function() {
-  $('.main-nav').on('click', '.tab', function(e) {
-    e.preventDefault();
+  $('.main-nav').on('click', '.tab', function() {
     $('.tab-content').hide();
+    console.log($(this).data('content'));
     $('#' + $(this).data('content')).fadeIn();
   });
 
@@ -11,7 +11,7 @@ projectView.handleMainNav = function() {
 };
 
 $(document).ready(function() {
-  projectView.handleMainNav();
+  $(projectView.handleMainNav());
 });
 // $('.main-nav').on('click', '.tab', function(e) {
 //   e.preventDefault();
