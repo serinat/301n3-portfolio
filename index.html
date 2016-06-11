@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
+
+    <script id="myPortfolio" type="text/x-handlebars-template">
+    <project data-category={{category}} data-project={{project}}>
+    <h2>{{title}}</h2>
+      <time pubdate datetime="2000-01-01">{{publishStatus}}</time>
+      <section class="project-body">{{{body}}}</section>
+    </project>
+    </script>
   </head>
   <body>
     <header>
@@ -28,6 +36,20 @@
   </nav>
   <main>
     <section id="projects" class="tab-content">
+      <div>
+        <ul id="filters">
+            <li>
+              <select id="project-filter">
+                <option value="">-- Filter by Projects --</option>
+              </select>
+            </li>
+            <li>
+              <select id="category-filter">
+                <option value="">-- Filter by Categories --</option>
+              </select>
+            </li>
+          </ul>
+        </div>
       <project class="template"
       <header>
         <h2>Title</h2>
@@ -47,7 +69,6 @@
         </ul>
       </section>
     </section>
-    <hr>
     <section id="contact" class="tab-content">
       <header>
         <h2>Contact</h2>
@@ -58,8 +79,11 @@
           <li><a class="tab icon-github" href='https://github.com/serinat'></a></li>
         </ul>
       </section>
+    </section>
+    <hr>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
   <script type="text/javascript" src="scripts/projects.js"></script>
   <script type="text/javascript" src="scripts/app.js"></script>
   <script type="text/javascript" src="scripts/projectView.js"></script>
