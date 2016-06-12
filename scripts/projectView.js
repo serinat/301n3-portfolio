@@ -30,7 +30,8 @@ projectView.handleProjectFilter = function() {
   $('#project-filter').on('change', function() {
     if ($(this).val()) {
       $('project').hide();
-      $('project[data-project="' + $(this).val() + '"]').fadeIn();
+      //$('project[data-project="' + $(this).val() + '"]').fadeIn();
+      $('h2:contains("'+$(this).val()+'")').parent().fadeIn();
     } else {
       $('project').fadeIn();
       $('project.template').hide();
