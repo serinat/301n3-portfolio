@@ -18,7 +18,7 @@
 #filters {
   padding: 0;
   list-style: none;
-}  
+}
 
 .icon-menu {
   font-size: 3em;
@@ -31,6 +31,7 @@
 }
 
 .main-nav ul {
+  text-align: center;
   display: none;
   padding: 0;
   list-style: none;
@@ -48,7 +49,7 @@
   /*border-bottom: 1px solid #ccc;*/
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 640px) {
   .icon-menu {
     display: none;
   }
@@ -57,6 +58,6 @@
   }
   .main-nav ul li {
   display: inline;
-  padding-right: 5%;
+  padding-right: 2%;
   }
 }

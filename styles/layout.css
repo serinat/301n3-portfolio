@@ -13,4 +13,13 @@
     width: 20em;
     display: inline;
   }
+
+  address {
+    display: inline-block;
+  }
+
+  main {
+    margin: auto;
+    width: 80%;
+  }
 }
