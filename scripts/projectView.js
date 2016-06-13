@@ -53,19 +53,15 @@ projectView.handleCategoryFilter = function() {
   });
 };
 
-projectView.toggleNavDisplay = function() {
-  $('.ion-navicon-round').on('click', function(e) {
-    $('.main-nav ul').toggle();
-  });
-};
+$('.ion-navicon-round').click(function() {
+  $('.main-nav ul').toggle();
+});
 
 $(document).ready(function() {
   $(projectView.handleMainNav());
   $(projectView.populateFilters());
   $(projectView.handleCategoryFilter());
   $(projectView.handleProjectFilter());
-  $(projectView.toggleNavDisplay());
-  // $(projectView.eventHandler());
 });
 // $('.main-nav').on('click', '.tab', function(e) {
 //   e.preventDefault();
