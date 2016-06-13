@@ -53,6 +53,10 @@ projectView.handleCategoryFilter = function() {
   });
 };
 
+$('.ion-navicon-round').click(function() {
+  $('.main-nav ul').toggle();
+});
+
 $(document).ready(function() {
   $(projectView.handleMainNav());
   $(projectView.populateFilters());
