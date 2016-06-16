@@ -39,8 +39,8 @@ Project.loadAll = function(projectData) {
 
   projectData.forEach(function(ele) {
     Project.all.push(new Project(ele));
-  })
-}
+  });
+};
 // Function retrieves data from either a local or remote source,
 // processes it, then hands off control to the View.
 Project.fetchAll = function() {
@@ -62,7 +62,7 @@ Project.fetchAll = function() {
     });
 
   }
-}
+};
 // $(document).ready(function() {
 //   projectData.sort(function(a,b) {
 //     return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
