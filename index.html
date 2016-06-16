@@ -85,8 +85,13 @@
     </section>
     <hr>
   </main>
-  <script type="text/javascript" src="scripts/projects.js"></script>
-  <script type="text/javascript" src="scripts/app.js"></script>
-  <script type="text/javascript" src="scripts/projectView.js"></script>
+  <!-- <script type="text/javascript" src="scripts/projects.js"></script> -->
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/projectView.js"></script>
+    <script>
+      $(document).ready(function(){
+        Project.fetchAll();
+      })
+    </script>
   </body>
 </html>

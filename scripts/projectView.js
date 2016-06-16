@@ -57,12 +57,17 @@ $('.ion-navicon-round').click(function() {
   $('.main-nav ul').toggle();
 });
 
-$(document).ready(function() {
-  $(projectView.handleMainNav());
-  $(projectView.populateFilters());
-  $(projectView.handleCategoryFilter());
-  $(projectView.handleProjectFilter());
-});
+projectView.initIndexPage = function() {
+  Project.all.forEach(function(a){
+    $('#projects').append(a.toHtml())
+  });
+
+// $(document).ready(function() {
+  projectView.handleMainNav();
+  projectView.populateFilters();
+  projectView.handleCategoryFilter();
+  projectView.handleProjectFilter();
+};
 // $('.main-nav').on('click', '.tab', function(e) {
 //   e.preventDefault();
 //   $('.tab-content').hide();
