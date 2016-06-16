@@ -31,7 +31,7 @@ Project.prototype.toHtml = function () {
 //
 //   return $newProject;
 // };
-
+//Function takes projectData and instantiates all the projects//
 Project.loadAll = function(projectData) {
   projectData.sort(function(a,b) {
     return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
@@ -41,19 +41,23 @@ Project.loadAll = function(projectData) {
     Project.all.push(new Project(ele));
   })
 }
-
+// Function retrieves data from either a local or remote source,
+// processes it, then hands off control to the View.
 Project.fetchAll = function() {
   if (localStorage.getItem('projectData')) {
-
+    //Function loads projectData once it is in local storage
     Project.loadAll(JSON.parse(localStorage.getItem('projectData')));
-
+    //Renders the index page
     projectView.initIndexPage();
 
   } else {
-
+    //Retrieve the JSON file from the server with AJAX
     $.get('data/projects.json',function(data){
+      //Store the resulting JSON data
       Project.loadAll(data);
+      //Cache the data in localStorage to skip server call moving forward
       localStorage.setItem('projectData',JSON.stringify(data));
+      //Render index page
       projectView.initIndexPage();
     });
 
