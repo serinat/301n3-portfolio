@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Project Stats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="vendors/normalize.css">
+    <link rel="stylesheet" href="styles/ionicons.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
+    <link rel="stylesheet" href="styles/state.css">
+  </head>
+  <script id="project-template" type="text/x-handlebars-template">
+      <li><strong>{{title}}</strong>: {{wordCount}} words written</li>
+    </script>
+  <body>
+    <header>
+      <h2 class="animated bounceInRight">Welcome to my portfolio!</h2>
+      <h1 class="animated fadeIn">Serina Tsang</h1>
+    </header>
+    <main>
+      <h1>Project Stats</h1>
+      <section id="project-stats">
+        <dt>Total projects:</dt> <dd class="projects"></dd>
+        <dt>Total words:</dt> <dd class="words"></dd>
+        <h2>Project Stats</h2>
+        <ul class="project-stats">
+          
+        </ul>
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/projectView.js"></script>
+    <script>
+      Project.fetchAll(projectView.initAdminPage);
+    </script>
+  </body>
+</html>
