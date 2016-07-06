@@ -31,10 +31,10 @@
   <nav class="main-nav">
     <div class="ion-navicon-round"></div>
     <ul>
-      <li class="tab" data-content="home"><a href="#" class="ion-home">HOME</a></li>
-      <li class="tab" data-content="projects"><a href="#" class="ion-laptop">PROJECTS</a></li>
-      <li class="tab" data-content="about"><a href="#" class="ion-happy">ABOUT</a></li>
-      <li class="tab" data-content="contact"><a href="#" class="ion-android-contact">CONTACT</a></li>
+      <li class="tab" data-content="home"><a href="/" class="ion-home">HOME</a></li>
+      <li class="tab" data-content="projects"><a href="projects" class="ion-laptop">PROJECTS</a></li>
+      <li class="tab" data-content="about"><a href="about" class="ion-happy">ABOUT</a></li>
+      <li class="tab" data-content="contact"><a href="contact" class="ion-android-contact">CONTACT</a></li>
     </ul>
   </nav>
   <main>
@@ -85,14 +85,24 @@
     </section>
     <hr>
   </main>
-  <!-- <script type="text/javascript" src="scripts/projects.js"></script> -->
+    <script src="/vendors/scripts/marked.js"></script>
+    <script src="/vendors/scripts/html5sql.js"></script>
+    <script src="/vendors/scripts/page.js"></script>
+    <script type="text/javascript" src="scripts/projects.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>
     <script type="text/javascript" src="scripts/projectView.js"></script>
-    <script>
+    <script src="/scripts/webdb.js"></script>
+    <!-- <script>
       // $(document).ready(function(){
       //   Project.fetchAll();
       // })
-      Project.fetchAll(projectView.initIndexPage);
-    </script>
+      // Project.fetchAll(projectView.initIndexPage);
+    </script> -->
+    <script src="/scripts/homeController.js"></script>
+    <script src="/scripts/projectController.js"></script>
+    <script src="/scripts/aboutController.js"></script>
+    <script src="/scripts/contactController.js"></script>
+    <script src="/scripts/routes.js"></script>
+
   </body>
 </html>
