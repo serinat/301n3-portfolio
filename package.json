@@ -1,0 +1,25 @@
+{
+  "name": "301n3-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-request-proxy": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serinat/My-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serinat/My-portfolio/issues"
+  },
+  "homepage": "https://github.com/serinat/My-portfolio#readme"
+}
