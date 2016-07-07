@@ -62,7 +62,7 @@
   projectView.initIndexPage = function() {
       $('#projects').empty();
     Project.all.forEach(function(a){
-      $('#projects').append(a.toHtml());
+      $('#projects').append(render(a));
     });
 
 // $(document).ready(function() {
