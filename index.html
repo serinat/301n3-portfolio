@@ -22,6 +22,15 @@
       <section class="project-body">{{{body}}}</section>
     </project>
     </script>
+    <script id="repo-template" type="text/x-handlebars-template">
+      <li>
+        <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+        <p>Description: {{description}}</p>
+        <p>Language: {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Last updated: {{updated_at}}</p>
+      </li>
+    </script>
   </head>
   <body>
     <header>
@@ -87,21 +96,20 @@
   </main>
     <script src="/vendors/scripts/marked.js"></script>
     <script src="/vendors/scripts/html5sql.js"></script>
-    <script src="/vendors/scripts/page.js"></script>
-    <script type="text/javascript" src="scripts/projects.js"></script>
-    <script type="text/javascript" src="scripts/app.js"></script>
-    <script type="text/javascript" src="scripts/projectView.js"></script>
     <script src="/scripts/webdb.js"></script>
-    <!-- <script>
-      // $(document).ready(function(){
-      //   Project.fetchAll();
-      // })
-      // Project.fetchAll(projectView.initIndexPage);
-    </script> -->
-    <script src="/scripts/homeController.js"></script>
+    <script src="/vendors/scripts/page.js"></script>
+
+    <script src="/scripts/githubToken.js"></script>
+
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/projects.js"></script>
+    <script type="text/javascript" src="scripts/projectView.js"></script>
     <script src="/scripts/projectController.js"></script>
+    <script src="/scripts/homeController.js"></script>
     <script src="/scripts/aboutController.js"></script>
     <script src="/scripts/contactController.js"></script>
+    <script src="/scripts/repoView.js"></script>
+    <script src="/scripts/repo.js"></script>
     <script src="/scripts/routes.js"></script>
 
   </body>
