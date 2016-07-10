@@ -12,7 +12,7 @@
         repos.all = data;
         callback(data);
       }
-    });
+    }).done(callback);
   };
 
   repos.with = function(attr) {
