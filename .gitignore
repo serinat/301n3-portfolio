@@ -1,5 +1,5 @@
 .DS_STORE
-githubToken.js
+/scripts/githubToken.js
 # Logs
 logs
 *.log
