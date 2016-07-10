@@ -20,7 +20,7 @@
   list-style: none;
 }
 
-.icon-menu {
+.ion-navicon-round {
   font-size: 3em;
   float: right;
   text-decoration: none;
@@ -46,7 +46,7 @@
 }
 
 @media only screen and (min-width: 640px) {
-  .icon-menu {
+  .ion-navicon-round {
     display: none;
   }
   .main-nav ul {
